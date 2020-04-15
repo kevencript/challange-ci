@@ -1,5 +1,5 @@
 steps:
   - id: "Executando testes unitários"
     name: "gcr.io/cloud-builders/go"
-    args: ["test", "main"]
+    args: ["test", "main_test.go"]
     env: ["GOPATH=."]
