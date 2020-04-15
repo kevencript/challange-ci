@@ -1,4 +1,4 @@
-# Desafio de CI da CodeEducation 
+# Desafio de DevOps (CI) da CodeEducation 
 
 Este repositório foi criado para afim de realizar o desafio de integração contínua proposta pela CodeEducation.
 
