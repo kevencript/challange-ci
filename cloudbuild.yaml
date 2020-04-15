@@ -5,4 +5,4 @@ steps:
 
   - id: "Running Docker ps"
     name: "gcr.io/cloud-builders/docker"
-    args: ["ps -a"]
+    args: ["ps", "-a"]
