@@ -1,6 +1,6 @@
 package soma
 
 func SomarValor() int {
-	soma := 5 + 2
+	soma := 5 + 5
 	return soma
 }
