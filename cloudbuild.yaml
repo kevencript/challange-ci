@@ -11,9 +11,9 @@ steps:
     name: docker
     args: ["build", "-t", "gcr.io/$PROJECT_ID/challange-ci:latest", "."]
 
-  - id: "Verificando se a imagem realmente subiu"
-    name: challange-ci:latest
-    args: ["version"]
+#   - id: "Verificando se a imagem realmente subiu"
+#     name: challange-ci:latest
+#     args: ["version"]
 
 images: ["gcr.io/$PROJECT_ID/challange-ci:latest"]
 tags: ["challange-ci"]
