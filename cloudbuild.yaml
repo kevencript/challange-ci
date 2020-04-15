@@ -13,4 +13,4 @@ steps:
       args: ["version"]
 
     images:
-    - "gcr.io/$PROJECT_ID/challange-ci:latest"
+   - "gcr.io/$PROJECT_ID/challange-ci:latest"
