@@ -8,7 +8,7 @@ steps:
     args: ["up", "-d"]
 
   - id: "Subindo imagem pro GCP registry"
-    name: 'gcr.io/cloud-builders/docker'
+    name: "gcr.io/cloud-builders/docker"
     args: ["build","--build-arg"," "-t", "gcr.io/$PROJECT_ID/challange-ci:latest", "."]
 
   - id: "Verificando se a imagem realmente subiu"
