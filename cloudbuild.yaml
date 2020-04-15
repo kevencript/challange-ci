@@ -1,0 +1,15 @@
+steps:
+  - id: "Go Unit Tests"
+    name: golang
+    args: ["go", "test", "main_test.go"]
+
+  - id: "docker-compose"
+    name: "gcr.io/$PROJECT_ID/docker-compose"
+    args: ["up", "-d"]
+
+  - id: "Subindo imagem no GCP"
+    name: docker
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/challange-ci:latest", "."]
+
+images: ["gcr.io/$PROJECT_ID/challange-ci:latest"]
+tags: ["challange-ci"]

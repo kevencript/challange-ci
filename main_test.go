@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/kevencript/challange-go/soma"
+	"github.com/kevencript/challange-ci/soma"
 )
 
 func TestSoma(t *testing.T) {
