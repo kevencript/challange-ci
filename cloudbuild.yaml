@@ -1,4 +1,8 @@
 steps:
+  - id: "Executando testes unitários"
+    name: golang
+    args: ["go", "test", "main_test.go"]
+
   - id: "Running docker-compose"
     name: "gcr.io/$PROJECT_ID/docker-compose"
     args: ["up", "-d"]
