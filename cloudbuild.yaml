@@ -8,7 +8,7 @@ steps:
     args: ["up", "-d"]
 
   - id: "Subindo imagem no GCP"
-    name: "gcr.io/cloud-builders/docker"
+    name: docker
     args:
       [
         "build",
@@ -22,21 +22,4 @@ steps:
     name: "gcr.io/$PROJECT_ID/challange-ci:latest"
     args: ["version"]
 
-images:
-  ["gcr.io/$PROJECT_ID/challange-ci:latest"]
-  # tags: ['cloud-builders-community']
-# steps:
-#     - id: "Go Unit Tests"
-#       name: golang
-#       args: ["go", "test", "main_test.go"]
-
-#     - id: "docker-compose"
-#       name: "gcr.io/$PROJECT_ID/docker-compose"
-#       args: ["up", "-d"]
-
-#     - id: "Verificando se a imagem realmente subiu"
-#       name: "gcr.io/$PROJECT_ID/challange-ci:latest"
-#       args: ["version"]
-
-#     images:
-#    - "gcr.io/$PROJECT_ID/challange-ci:latest"
+images: ["gcr.io/$PROJECT_ID/challange-ci:latest"]
