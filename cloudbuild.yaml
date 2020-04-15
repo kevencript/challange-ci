@@ -7,9 +7,6 @@ steps:
       name: "gcr.io/$PROJECT_ID/docker-compose"
       args: ["up", "-d"]
 
-    - id: "Subindo imagem para GCP"
-      name: "gcr.io/cloud-builders/docker"
-      args: ["build","--build-arg"," "-t", "gcr.io/$PROJECT_ID/challange-ci:latest", "."]
 
     - id: "Verificando se a imagem realmente subiu"
       name: "gcr.io/$PROJECT_ID/challange-ci:latest"
